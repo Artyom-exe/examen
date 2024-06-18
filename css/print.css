@@ -1,0 +1,23 @@
+.container {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+}
+figure {
+    display: none;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+ul {
+    display: flex;
+}
+li {
+    margin-right: 10px;
+}
+
+

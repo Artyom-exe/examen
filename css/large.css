@@ -1,0 +1,98 @@
+/* effet sur toute la page en large */
+* {
+  box-sizing: border-box;
+}
+
+/* modifie taille header en large */
+header {
+  min-height: 50vh;
+}
+
+/* centre verticalement contenu article en large  */
+section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 50px;
+}
+
+/* ajustement logo en large */
+nav figure img.logo {
+  width: 25%;
+  height: auto;
+}
+
+/* création card en large dans section "articles mis en avant" */
+section:nth-child(1) article {
+  border: rgb(236, 236, 236) 1px solid;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 50px 20px;
+  background-color: #fff;
+}
+
+section:nth-child(1) article:nth-child(2) {
+  transform: scale(1.1);
+}
+
+/* changement d'ordre des elements dans section 3 */
+section:nth-child(3) figure {
+  order: -1;
+}
+
+/* Grille */
+.wrapper-l {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0.5em;
+}
+
+/* Colonnes */
+.col-12 {
+  grid-column: span 12;
+}
+
+.col-11 {
+  grid-column: span 11;
+}
+
+.col-10 {
+  grid-column: span 10;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-1 {
+  grid-column: span 1;
+}

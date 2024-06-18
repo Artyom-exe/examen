@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* mon conteneur => effet sur toute la page */
+.container {
+  font-family: "Manrope";
+  text-align: justify;
+  max-width: 1600px;
+  margin: auto;
+  min-width: 320px;
+}
+
+p {
+  max-width: 800px;
+}
+
+/* Grille */
+.wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0.5em;
+}
+
+/* Colonnes */
+.col-sm-12 {
+  grid-column: span 12;
+}
+
+.col-sm-11 {
+  grid-column: span 11;
+}
+
+.col-sm-10 {
+  grid-column: span 10;
+}
+
+.col-sm-9 {
+  grid-column: span 9;
+}
+
+.col-sm-8 {
+  grid-column: span 8;
+}
+
+.col-sm-7 {
+  grid-column: span 7;
+}
+
+.col-sm-6 {
+  grid-column: span 6;
+}
+
+.col-sm-5 {
+  grid-column: span 5;
+}
+
+.col-sm-4 {
+  grid-column: span 4;
+}
+
+.col-sm-3 {
+  grid-column: span 3;
+}
+
+.col-sm-2 {
+  grid-column: span 2;
+}
+
+.col-sm-1 {
+  grid-column: span 1;
+}
+
+/* navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+nav figure img.logo {
+  width: 40%;
+  height: auto;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+nav ul li {
+  list-style-type: none;
+  margin: 5px;
+
+}
+nav ul li a {
+  color: #4e851e;
+  text-decoration: none;
+  padding: 0.4rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+  }
+nav ul li:hover a {
+  background-color:#4e851e;
+  color: #fff;
+  }
+
+/* header */
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 30vh;
+  background-image: url(/images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+header div.title h1{
+  font-size: 1.5em;
+  font-weight: bold;
+  color:white;
+}
+header div.title p{
+  margin: 10px;
+  text-align: center;
+}
+
+header div.title a{
+  color:#4e851e;
+  text-decoration: none;
+  padding: 0.4rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+
+header div.title a:hover {
+  background-color: #4e851e;
+  color: #fff;
+}
+
+header div.title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(151, 151, 151, 0.51);
+    width: 80%;
+    padding: 15px;
+}
+
+/* les sections */
+
+section {
+  padding: 20px;
+}
+
+section article {
+  margin: 20px 0;
+}
+
+/* effet uniquement sur la section "articles mis en avant" */
+section:nth-child(1) article, section:nth-child(1) figure, section:nth-child(1) h2, section:nth-child(1) p {
+  text-align: center;
+}
+
+section article figure {
+  font-size: 2em;
+  padding: 5px;
+}
+
+section article figure i {
+  position: relative;
+  animation: rebondir 1s ease-in-out 2;
+  }
+
+footer {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(236, 236, 236);
+  margin-top: 50px;
+}
+
+/* mon animation */
+@keyframes rebondir {
+  0% {
+    transform: translateY(0px);
+  }
+
+  20% {
+    transform: translateY(-30px);
+  }
+
+  40% {
+    transform: translateY(0px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+
+  80% {
+    transform: translateY(0px);
+  }
+
+  90% {
+    transform: translateY(-7px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
