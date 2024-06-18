@@ -4,7 +4,7 @@
 .container {
   font-family: "Manrope";
   text-align: justify;
-  max-width: 1600px;
+  /* max-width: 1600px; */
   margin: auto;
   min-width: 320px;
 }
